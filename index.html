@@ -102,56 +102,42 @@ input{border-radius:8px;border:2px solid #fff;padding:4px 8px;width:200px;font-s
 #joy{position:fixed;left:22px;bottom:90px;width:124px;height:124px;border-radius:50%;background:rgba(255,255,255,.18);border:3px solid #fff;z-index:5}
 #joy i{position:absolute;left:32px;top:32px;width:60px;height:60px;border-radius:50%;background:rgba(255,255,255,.55)}
 #ctl{left:10px;top:auto;bottom:34px;font-size:10px;background:rgba(0,0,0,.5);padding:3px 8px;border-radius:8px;max-width:30vw;line-height:1.35}
-/* ---------- start screen ---------- */
-#menu{background:linear-gradient(90deg,rgba(6,9,18,.94) 0%,rgba(6,9,18,.86) 48%,rgba(6,9,18,.55) 100%);align-items:stretch;justify-content:stretch;font-family:"Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;-webkit-user-select:none}
+/* ---------- start screen (retro arcade) ---------- */
+#menu{background:radial-gradient(ellipse at center,#5b5aa6 0%,#3f3d82 60%,#2c2a63 100%);font-family:"Press Start 2P","Courier New",monospace}
 #menu *{box-sizing:border-box}
-.sm{width:100%;min-height:100%;display:flex;flex-direction:column;padding:28px clamp(20px,4vw,56px);color:#e7ebf3}
-.sm-top{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.08);padding-bottom:16px}
-.sm-brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:.32em;font-size:15px}
-.sm-logo{width:30px;height:30px;border-radius:50%;border:2px solid #e7ebf3;position:relative;display:inline-block}
-.sm-logo:before{content:"";position:absolute;inset:7px;border-radius:50%;background:#e7ebf3}
-.sm-logo i{position:absolute;left:-7px;top:11px;width:40px;height:4px;border-radius:4px;background:#ff7a1a;transform:rotate(-22deg)}
-.sm-tag{font-size:13px;color:#8d97ab}
-.sm-main{flex:1;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(300px,.85fr);gap:clamp(24px,4vw,64px);align-items:center;padding:28px 0}
-.sm-kicker{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#ff9a4a;font-weight:600;margin-bottom:14px}
-.sm-title{font-size:clamp(30px,4.2vw,54px);line-height:1.08;margin:0 0 18px;font-weight:700;letter-spacing:-.02em;color:#fff}
-.sm-lead{font-size:16px;line-height:1.6;color:#b4bdcf;max-width:560px;margin:0 0 28px}
-.sm-cta{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
-.sm-go{appearance:none;border:0;cursor:pointer;background:#ff7a1a;color:#fff;font:600 17px/1 inherit;font-family:inherit;padding:16px 28px;border-radius:10px;box-shadow:0 8px 24px rgba(255,122,26,.28);transition:transform .12s,background .12s}
-.sm-go span{display:inline-block;margin-left:8px;transition:transform .15s}
-.sm-go:hover{background:#ff8b36}.sm-go:hover span{transform:translateX(4px)}.sm-go:active{transform:scale(.98)}
-.sm-hint{font-size:13px;color:#8d97ab}
-#menu kbd{display:inline-block;min-width:20px;text-align:center;padding:2px 6px;margin:0 2px;border-radius:5px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);color:#e7ebf3;font:600 11px/1.4 inherit;font-family:inherit;box-shadow:none}
-.sm-steps{display:flex;gap:8px;flex-wrap:wrap;margin-top:36px}
-.sm-steps div{font-size:13px;color:#b4bdcf;border:1px solid rgba(255,255,255,.1);border-radius:999px;padding:6px 12px 6px 6px;display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.03)}
-.sm-steps b{width:22px;height:22px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:rgba(255,122,26,.16);color:#ff9a4a;font-size:12px}
-.sm-side{display:flex;flex-direction:column;gap:16px}
-.sm-card{background:rgba(15,20,34,.78);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:18px 18px 14px;backdrop-filter:blur(6px)}
-.sm-h{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#8d97ab;font-weight:600;margin-bottom:12px}
-.sm-dest{display:grid;grid-template-columns:40px 1fr auto;gap:12px;align-items:center;padding:10px 0;border-top:1px solid rgba(255,255,255,.06)}
-.sm-dest:first-of-type{border-top:0}
-.sm-dest b{font-size:15px;color:#fff;font-weight:600}
-.sm-dest small{display:block;font-size:12.5px;line-height:1.45;color:#9aa4b7;margin-top:2px}
-.sm-dest em{font-style:normal;font-size:11px;color:#8d97ab;border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:3px 6px;white-space:nowrap}
-.pl{width:40px;height:40px;border-radius:50%;display:block;box-shadow:inset -8px -6px 12px rgba(0,0,0,.45)}
-.pl-moon{background:radial-gradient(circle at 30% 35%,#7d7d82 0 5px,transparent 6px),radial-gradient(circle at 64% 62%,#86868b 0 7px,transparent 8px),radial-gradient(circle at 60% 28%,#8b8b90 0 3px,transparent 4px),#b9b9be}
-.pl-mars{background:radial-gradient(circle at 40% 60%,#9a3f22 0 8px,transparent 9px),radial-gradient(circle at 68% 34%,#c96a3c 0 6px,transparent 7px),#d0623a}
-.pl-ast{border-radius:46% 54% 40% 60%/55% 42% 58% 45%;background:radial-gradient(circle at 35% 40%,#5f574f 0 4px,transparent 5px),radial-gradient(circle at 62% 64%,#5f574f 0 6px,transparent 7px),#8a7f72;transform:rotate(-18deg)}
-.sm-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:9px 0;border-top:1px solid rgba(255,255,255,.06);font-size:14px;color:#cfd6e3}
-.sm-row:first-of-type{border-top:0}
-.sm-row small{color:#7f899c;font-size:11px;margin-left:4px}
-.seg{display:inline-flex;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:9px;padding:3px;gap:2px}
-#menu .seg .todb{appearance:none;border:0;background:transparent;color:#aab3c5;font:500 13px/1 inherit;font-family:inherit;padding:7px 11px;border-radius:7px;cursor:pointer;box-shadow:none}
-#menu .seg .todb:hover{color:#fff}
-#menu .seg .todb.on{background:#e7ebf3;color:#0b1020}
-.sm-key input{width:150px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:8px;color:#e7ebf3;padding:7px 10px;font:13px inherit;font-family:inherit;outline:none}
-.sm-key input:focus{border-color:#ff9a4a}
-.sm-foot{display:flex;flex-wrap:wrap;gap:8px 22px;align-items:center;border-top:1px solid rgba(255,255,255,.08);padding-top:14px;font-size:12px;color:#7f899c}
-.sm-live{color:#cfd6e3;font-weight:600;display:inline-flex;align-items:center;gap:7px}
-.sm-live i{width:7px;height:7px;border-radius:50%;background:#3ddc84;box-shadow:0 0 0 3px rgba(61,220,132,.18)}
-.sm-note{margin-left:auto}
-@media(max-width:860px){.sm-main{grid-template-columns:1fr}.sm-note{margin-left:0}#menu{background:rgba(6,9,18,.93)}}
+.rt{position:relative;width:min(760px,94vw);margin:16px;padding:34px 40px 26px;border-radius:42px;text-align:center;color:#f6e7c8;
+  background:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px) 0 0/48px 48px,linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px) 0 0/48px 48px,#3a2244;
+  box-shadow:0 0 0 10px #2a1a35,0 0 0 14px #5b5aa6,0 20px 60px rgba(0,0,0,.45),inset 0 0 60px rgba(0,0,0,.35);overflow:hidden}
+.rt:before{content:"";position:absolute;left:22px;top:18px;width:120px;height:120px;border-radius:50%;border-left:6px solid rgba(255,255,255,.12);transform:rotate(20deg);pointer-events:none}
+.rt-top{display:flex;justify-content:space-between;align-items:flex-start;text-align:left;margin-bottom:22px}
+.rt-hs{font-size:12px;line-height:1.7;color:#f6e7c8}
+.rt-hs span{color:#ffa21f;font-size:10px}
+.rt-hearts{display:flex;gap:6px}
+.rt-hearts i{width:22px;height:20px;background:#ffa21f;clip-path:polygon(0 25%,25% 0,50% 18%,75% 0,100% 25%,100% 50%,50% 100%,0 50%)}
+.rt-title{margin:6px 0 14px;font-size:clamp(34px,7vw,64px);letter-spacing:4px;font-weight:400;line-height:1.1;
+  background:linear-gradient(#ffd23a 0 45%,#ff8a1a 45% 100%);-webkit-background-clip:text;background-clip:text;color:transparent;
+  filter:drop-shadow(4px 4px 0 #8a3b12)}
+.rt-sub{font-size:13px;margin-bottom:20px;color:#f6e7c8}
+.rt-list{list-style:none;margin:0 auto 18px;padding:0;max-width:600px;text-align:left;font-size:10px;line-height:1.9;color:#e9d9bb}
+.rt-list li{padding:3px 0}
+.rt-list b{display:inline-block;min-width:118px;color:#ffa21f;font-weight:400}
+.rt-set{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;margin:8px 0;font-size:10px}
+.rt-set span{color:#e9d9bb;margin-right:6px}
+#menu .rt-set .todb{appearance:none;font:10px/1 inherit;font-family:inherit;color:#f6e7c8;background:transparent;border:3px solid #6b4a7a;border-radius:0;padding:8px 10px;cursor:pointer;box-shadow:none}
+#menu .rt-set .todb:hover{border-color:#ffa21f}
+#menu .rt-set .todb.on{background:#ffa21f;border-color:#ffa21f;color:#3a2244}
+.rt-go{appearance:none;margin:20px auto 14px;display:inline-flex;align-items:center;gap:14px;background:transparent;border:0;cursor:pointer;
+  font:28px/1 inherit;font-family:inherit;color:#f6e7c8;letter-spacing:3px}
+.rt-go em{font-style:normal;color:#ffa21f;font-size:24px;animation:rtb .7s steps(2) infinite}
+.rt-go:hover{color:#ffd23a}
+@keyframes rtb{50%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.rt-go em{animation:none}}
+.rt-key{font-size:9px;color:#c9b79a}
+.rt-key input{margin-left:8px;width:150px;background:#2a1a35;border:3px solid #6b4a7a;color:#f6e7c8;padding:6px 8px;font:9px inherit;font-family:inherit;outline:none;border-radius:0}
+.rt-key input:focus{border-color:#ffa21f}
+.rt-foot{margin-top:14px;font-size:8px;color:#9c8aa8}
 </style>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
 <canvas id="c"></canvas>
@@ -195,46 +181,22 @@ input{border-radius:8px;border:2px solid #fff;padding:4px 8px;width:200px;font-s
 <div id="xhair" style="position:fixed;left:50%;top:50%;width:14px;height:14px;margin:-7px 0 0 -7px;border:2px solid #fff;border-radius:50%;display:none;pointer-events:none;z-index:8"></div>
 <div class="hud" id="astro" style="top:10px;left:50%;transform:translateX(-50%);display:none;background:rgba(10,10,30,.8);border:3px solid #ffb030;border-radius:14px;padding:6px 16px;font-size:20px;font-weight:bold;text-align:center;z-index:8"></div>
 <div id="warp"><div id="warptxt"></div></div>
-<div class="ov" id="menu"><div class="sm">
- <header class="sm-top">
-  <div class="sm-brand"><span class="sm-logo"><i></i></span>ORBITALS</div>
-  <div class="sm-tag">A space mission game · Ages 7–12</div>
- </header>
- <main class="sm-main">
-  <section class="sm-hero">
-   <div class="sm-kicker">Mission briefing</div>
-   <h1 class="sm-title">Train like an astronaut.<br>Fly to the Moon and Mars.</h1>
-   <p class="sm-lead">Start on the beach, take the boat to the launch island, suit up and ride the crew elevator. In the cockpit you run the real launch checklist, then fly, land and explore.</p>
-   <div class="sm-cta">
-    <button class="sm-go" id="go">Start mission <span>→</span></button>
-    <div class="sm-hint"><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> move &nbsp;·&nbsp; <kbd>E</kbd> use &nbsp;·&nbsp; <kbd>T</kbd> flag &nbsp;·&nbsp; drag to look</div>
-   </div>
-   <div class="sm-steps">
-    <div><b>1</b>Beach &amp; boat</div><div><b>2</b>Spacesuit</div><div><b>3</b>Elevator</div><div><b>4</b>Launch checklist</div><div><b>5</b>Land &amp; explore</div>
-   </div>
-  </section>
-  <aside class="sm-side">
-   <div class="sm-card">
-    <div class="sm-h">Destinations</div>
-    <div class="sm-dest"><span class="pl pl-moon"></span><div><b>The Moon</b><small>Plant the UAE flag, set up a laser mirror, collect 3 rock samples.</small></div><em>1.62 m/s²</em></div>
-    <div class="sm-dest"><span class="pl pl-mars"></span><div><b>Mars · Gale Crater</b><small>Carry rocks to repair 4 holes in the radiation shield wall.</small></div><em>3.71 m/s²</em></div>
-    <div class="sm-dest"><span class="pl pl-ast"></span><div><b>Asteroid field</b><small>Dodge and laser 20 space rocks. You have 3 shields.</small></div><em>0 m/s²</em></div>
-   </div>
-   <div class="sm-card">
-    <div class="sm-h">Settings</div>
-    <div class="sm-row"><span>Time of day</span>
-     <div class="seg"><button class="todb" data-v="morning">Morning</button><button class="todb" data-v="night">Night</button><button class="todb" data-v="cycle">Day / night</button></div></div>
-    <div class="sm-row"><span>Practice storms</span>
-     <div class="seg"><button class="todb prb" data-p="0">Off</button><button class="todb prb" data-p="1">On</button></div></div>
-    <div class="sm-row sm-key"><span>NASA API key <small>optional</small></span><input id="key" placeholder="DEMO_KEY" autocomplete="off" spellcheck="false"></div>
-   </div>
-  </aside>
- </main>
- <footer class="sm-foot">
-  <span class="sm-live"><i></i>Live NASA data</span>
-  <span>DONKI · solar flares &amp; radiation storms</span><span>NeoWs · near-Earth asteroids</span><span>Mars Trek · surface map</span><span>OSDR · space biology studies</span>
-  <span class="sm-note">Needs internet · Mouse &amp; keyboard or touch</span>
- </footer>
+<div class="ov" id="menu"><div class="rt">
+ <div class="rt-top"><div class="rt-hs">MISSIONS<br><span>MOON · MARS · ASTEROIDS</span></div><div class="rt-hearts"><i></i><i></i><i></i><i></i><i></i></div></div>
+ <h1 class="rt-title">ORBITALS</h1>
+ <div class="rt-sub">ARE YOU READY, ASTRONAUT?</div>
+ <ul class="rt-list">
+  <li><b>EARTH</b> Take the boat, put on your suit, ride the elevator.</li>
+  <li><b>MOON</b> Plant the flag, set up a mirror, pick up rocks.</li>
+  <li><b>MARS</b> Fix the holes in the shield wall with rocks.</li>
+  <li><b>ASTEROIDS</b> Fly through the field and shoot 20 rocks.</li>
+  <li><b>STORMS</b> Real NASA solar storms. Hide in your rocket!</li>
+ </ul>
+ <div class="rt-set"><span>TIME</span><button class="todb" data-v="morning">MORNING</button><button class="todb" data-v="night">NIGHT</button><button class="todb" data-v="cycle">DAY+NIGHT</button></div>
+ <div class="rt-set"><span>PRACTICE STORMS</span><button class="todb prb" data-p="0">OFF</button><button class="todb prb" data-p="1">ON</button></div>
+ <button class="rt-go" id="go">START <em>◀</em></button>
+ <div class="rt-key">NASA KEY (OPTIONAL) <input id="key" placeholder="DEMO_KEY" autocomplete="off" spellcheck="false"></div>
+ <div class="rt-foot">NEEDS INTERNET FOR NASA DATA · MOUSE + KEYBOARD OR TOUCH</div>
 </div></div>
 <div class="ov" id="end" style="display:none"><div class="panel" id="endp"></div></div>
 
